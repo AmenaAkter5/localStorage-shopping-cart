@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+
+    <!-- Internal CSS -->
+    <style>
+        .btn {
+            padding: 10px 30px;
+            color: white;
+            background-color: rgb(139, 18, 139);
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        #input-box {
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid gray;
+            border-radius: 20px;
+            width: 400px;
+        }
+
+        .list {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shopping</h1>
+    <input type="text" id="input-box" placeholder="Input your favourite item here...">
+    <button class="btn" onclick="addItemInput()">Add to cart</button>
+    <br>
+    <ul id="products">
+        <!-- dynamically set the 'li' of 'ul' -->
+    </ul>
+    <br>
+    <button class="btn" onclick="placeOrder()">Place Order</button>
+
+    <!-- External JavaScript -->
+    <script src="js/1-shopping.js"></script>
+</body>
+
+</html>
